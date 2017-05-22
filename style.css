@@ -13,7 +13,7 @@ body {
   padding-right: 5%;
 }*/
 
-.introduction {
+.introduction, .contact {
   width: 100%;
   height: 100vh;
   
@@ -24,14 +24,52 @@ body {
   padding-top: 40%;
 }
 
-.introduction h2 {
+h2 {
   font-size: 4rem;
+  width: 20%;
+  line-height: 82%;
+}
+
+
+/* about styling */
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding-left: 10%;
+  padding-top: 10%;
+  background-color: white;
+  color: grey;
+}
+
+.about-intro {
+  display: flex;
+}
+
+.about-intro img {
+  width: 20%;
+}
+
+.software {
+  width: 80%;
+  height: 10%;
+  
+  background-color: hotpink;
+}
+
+
+/* project styling */
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 
 .project {
-display: flex;
-  
-padding-bottom: 10%;
+  width: 80%;
+  height: 21%;
+  overflow: hidden;
 }
 
 ul {
@@ -40,5 +78,29 @@ ul {
 }
 
 .project img {
-  width: 70%;
+  width: 80%;
+  filter: blur(0) grayscale(0;);
+  transition: filter 0.8s ease;
 }
+
+.project:hover img {
+  filter: blur(3px) grayscale(100%);
+}
+
+
+
+/*
+.project img {
+  width: 80%;
+  animation: project-animation 2s ease;
+}
+
+@keyframes project-animation {
+  0% {
+    opacity: 0%;
+  }
+  
+  100% {
+    opacity: 100%;
+  }
+}*/
