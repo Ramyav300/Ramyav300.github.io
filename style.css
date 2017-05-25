@@ -3,7 +3,7 @@
 }
 
 body {
-	font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -48,6 +48,7 @@ h2 {
 
 .about-intro img {
   width: 100%;
+  height: auto;
 }
 
 .software {
@@ -57,8 +58,21 @@ h2 {
   background-color: hotpink;
 }
 
+.software-icon {
+  padding-left: 60px;
+  min-height: 60px;
+  
+  background-image: url(default-user.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.software-sketch {
+  background-image: url(default-user.png);
+}
+
 .about-img {
-  width: 10%;
+  width: 40%;
 }
 
 /* project styling */
@@ -66,13 +80,19 @@ h2 {
 .projects {
   width: 100%;
   height: 100vh;
+  
+}
+.projects-tiles {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .project {
   width: 80%;
-  height: 21%;
   overflow: hidden;
+  position: relative;
 }
 
 ul {
@@ -86,11 +106,36 @@ ul {
   transition: filter 0.8s ease;
 }
 
+
 .project:hover img {
   filter: blur(2px) grayscale(100%);
 }
 
+.project-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  
+  color: white;
+  font-weight: 400;
+  
+  
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(80%);
+  transition: transform 1s ease;
+}
 
+.project:hover .project-text {
+  transform: translateY(0);
+}
+
+h4 {
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /*
 .project img {
