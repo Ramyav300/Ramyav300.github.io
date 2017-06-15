@@ -1,202 +1,108 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
-  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 5%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+}
+
+button {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  padding: 1% 2%;
+  background-color: black;
+  color: white;
+  border: 1px solid white;  
+}
+
+
+h2 {
+  text-align: center;
+  color: lightgrey;
+  padding-top: 10%;
+}
+
+
+h3 {
+  text-decoration: none;
+  color: white;
+  padding-left: 5%;
+  padding-bottom: 5%;
   margin: 0;
 }
 
-/* nav */
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  text-align: right;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  z-index: 1;
-}
-
-nav a {
+a {
   text-decoration: none;
-  color: white;
- padding: 0 5%;
 }
 
-nav .nav-img {
-  padding-left: 5%;  
-}
-
-.nav-text {
+.work-flex {  
   display: flex;
-  justify-content: space-between;
-  padding: 0 5%;
-}
-
-/*
-.wrapper {
-  padding-left: 5%;
-  padding-right: 5%;
-}*/
-
-.introduction, .contact {
-  width: 100%;
-  height: 100vh;
-  
-  background-color: black;
-  color: white;
-  
-  padding-left: 10%;
-  padding-top: 40%;
-}
-
-h2 {
-  font-size: 4rem;
-  width: 20%;
-  line-height: 82%;
+  flex-wrap: wrap;
+  padding: 10%;
+  height: 80vh;
 }
 
 
-
-h4 {
-  font-weight: 200;
-  font-size: 1.3rem;
-  text-align: center;
-  text-transform: uppercase;
+.work {
+  width: 50%;
 }
 
-/* about styling */
-
-.about {
-  width: 100%;
-  height: 100vh;
-  padding-left: 10%;
-  padding-top: 10%;
-  background-color: white;
-  color: grey;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-intro {
-  display: flex;
-}
-
-.about-intro img {
+.work img {
   width: 100%;
   height: auto;
+  padding: 0 5%;
+  margin: 0;
+  text-align: center;
 }
 
-.about-intro p {
-  padding: 0 10%;
-}
-
-.about h4 {
-  padding-top: 10%;
-}
-
-.about ul {
-  column-count: 2;
-}
-
-.software-icon {
-  padding-left: 60px;
-  min-height: 60px;
+@media (max-width: 768px) {
+  .work-flex {
+    display: inline;
+  }
   
-  background-image: url(default-user.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-}
-
-.software-icon span {
-  display: inline-block;
-  min-width: 80px;
-}
-.software-sketch {
-  background-image: url(default-user.png);
-}
-
-.about-img {
-  width: 40%;
-}
-
-/* project styling */
-
-.projects {
-  width: 100%;
-  height: 100vh;
+  h3 {
+    padding-bottom: 15%;
+  }
   
-}
-.projects-tiles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  flex-wrap: wrap;
+  h2 {
+    padding-top: 20%;
+  }
 }
 
-.project {
-  width: 25%;
-  overflow: hidden;
-  position: relative;
-  margin: 5%;
+/* about */
+
+#about {
+  text-align: center;
 }
 
-ul {
-	list-style: none;
-	padding: 0;
+p {
+  font-family: 'Raleway', sans-serif;
+  padding: 0 15%;
+  text-align: left;
 }
 
-.project img {
-  width: 100%;
+.about h2 {
+  padding-top: 2%;
 }
 
+.profile-pic {
+  width: 13%;
+  padding: 1%;
+}
 
-.project-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
+footer {
+  padding: 5%;
   color: white;
-  font-weight: 400;
-  
-  
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: translateY(80%);
-  transition: transform 1s ease;
 }
-
-.project:hover .project-text {
-  transform: translateY(0);
-}
-
-@media (max-width: 460px) {
-  .project {
-    width: 100%;
-  }
-}
-
-/*
-.project img {
-  width: 80%;
-  animation: project-animation 2s ease;
-}
-
-@keyframes project-animation {
-  0% {
-    opacity: 0%;
-  }
-  
-  100% {
-    opacity: 100%;
-  }
-}*/
