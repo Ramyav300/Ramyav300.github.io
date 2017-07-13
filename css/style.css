@@ -193,8 +193,9 @@ footer {
 }
 
 .project-details {
-  max-width: 85%;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 2%;
   
 }
 
@@ -249,8 +250,9 @@ ul {
   list-style: square;
 }
 
-iframe {
+.tuesdays-video {
   padding-bottom: 10%;
+  z-index: -1;
 }
 
 .book-flex {
