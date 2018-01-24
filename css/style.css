@@ -58,7 +58,7 @@ a {
 .tiles-verticaltext p {
 
   transform: rotate(-90deg);
-  transform-origin: center;
+  transform-origin: right;
   white-space: nowrap;
 }
 
