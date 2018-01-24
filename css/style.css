@@ -41,6 +41,7 @@ a {
 .tiles img {
   width: 100%;
   align-self: flex-start;
+  margin-left: 5%;
 }
 
 .tiles-description {
@@ -50,22 +51,15 @@ a {
 }
 
 .tiles-verticaltext {
-  width: 16.66667%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  line-height: 100%;
-  display: flex;
-  justify-content: center;
+
 }
 
 
 .tiles-verticaltext p {
-  position: absolute;
-  margin: 0 auto;
-  top: 50%;
+
   transform: rotate(-90deg);
   transform-origin: center;
+  white-space: nowrap;
 }
 
 
@@ -126,17 +120,10 @@ footer {
 
 /* projects */
 
-.project-title {
-  background-color: black;
-  color: white;
-  text-align: center;
-}
 
 .project-details {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2%;
-  
 }
 
 .project-details img {
