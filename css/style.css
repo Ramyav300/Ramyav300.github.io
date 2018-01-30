@@ -31,6 +31,7 @@ h4 {
 
 p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 /* homepage - work */
@@ -44,6 +45,7 @@ a {
   display: flex;
   width: 40%;
   margin-top: 7%;
+  font-weight: 900;
 }
 
 .tiles img {
@@ -102,9 +104,6 @@ footer a {
   padding-right: 2rem;
 }
 
-@media (max-width: 768px) {
-  
-  }
 
 /*
 @media (max-width: 420px) {
@@ -123,20 +122,23 @@ footer a {
 }
 
 .projects img {
-  max-width: 85%; 
+  max-width: 100%; 
   align-self: flex-start;
 }
 
 .projects-sections {
+  padding-bottom: 5%;
+}
+
+
+.projects-flex {
   display: flex;
   padding-bottom: 5%;
 }
-.projects p {
-  width: 90%;
-}
 
 .projects-textnexttoimage {
-  width: 30%;
+  width: 40%;
+  padding-right: 3%;
 }
 
 .projects-intro {
@@ -144,6 +146,29 @@ footer a {
   padding-top: 2%;
   
 }
+
+.projects-flex a {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .projects-flex {
+    display: block;
+  }
+  
+  .projects-textnexttoimage {
+    width: 100%;
+  }
+  
+  .projects img {
+    max-width: 100%;
+    padding-top: 3%;
+  }
+  
+  }
+
 
 /* Tuesdays Digital Magazine */
 
@@ -154,18 +179,10 @@ table, th, tr, td {
   text-align: left;
   padding: 1.5%;
   margin-top: 2%;
+  font-size: 0.9rem;
 }
-
-td {
-  font-family: 'Raleway', sans-serif;
-}
-
 th {
   font-size: 1.2rem;
-}
-
-.tuesdays img {
-  padding: 0;
 }
 
 .tuesdays p {
@@ -182,6 +199,7 @@ th {
 ul {
   list-style: square;
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .tuesdays-video {
