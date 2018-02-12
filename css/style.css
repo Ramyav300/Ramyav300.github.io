@@ -479,7 +479,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-right: 0.7rem;
+    margin-right: 1rem;
     transform: scale(1);
     transition: all .5s ease;
   }
