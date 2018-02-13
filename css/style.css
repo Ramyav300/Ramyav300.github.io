@@ -463,6 +463,30 @@ nav {
   }
 }
   
+/* oakley */
+
+.oakley-tasks {
+  margin: 1rem 0; 
+}
+
+@media (max-width: 768px) {
+  .oakley-tasks {
+    display: none;
+  }
+  
+  .oakley-tasks-mobile {
+    width: 100%;
+  height: 500px;
+  background: url(../../images/oakley-tasks-mobile.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  margin: 1rem 0;  
+}
+
+}
+
+
 /* other projects panel at the bottom */
   
   .other-projects-flex {
