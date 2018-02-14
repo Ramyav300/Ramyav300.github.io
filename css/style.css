@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -67,35 +68,33 @@ a {
 }
 
 .tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
   margin-top: 7%;
   font-weight: 900;
 }
-  
-  /*transform: scale(1);
-  transition: all .5s ease;
-}
 
-.tiles:hover {
-  transform: scale(1.1);
-}
-*/
 
 .tiles img {
   width: 100%;
+  -ms-flex-item-align: start;
   align-self: flex-start;
   margin-left: 1rem;
 }
 
 .tiles-description {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   max-width: 15%;
   margin-left: 3%;
 }
 
 .tiles-verticaltext p {
+  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  -webkit-transform-origin: right;
   transform-origin: right;
   white-space: nowrap;
 }
@@ -124,15 +123,20 @@ a {
   height: 300px;
   width: 100%;
   margin-left: 4%;
+  -webkit-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
 .img-wrapper:hover {
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .img-wrapper-one {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 165, 0, 0)), to(rgba(255, 0, 0, 0))),
+  url(../../images/work-atm-app.jpg);
   background: linear-gradient(rgba(255, 165, 0, 0), rgba(255, 0, 0, 0)),
   url(../../images/work-atm-app.jpg);
   background-size: cover;
@@ -142,6 +146,8 @@ a {
 }
 
 .img-wrapper-one:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 165, 0, 1)), to(rgba(255, 0, 0, 1))),
+  url(../../images/work-atm-app.jpg);
   background: linear-gradient(rgba(255, 165, 0, 1), rgba(255, 0, 0, 1)),
   url(../../images/work-atm-app.jpg);
   background-size: cover;
@@ -159,6 +165,8 @@ a {
 }
 
 .img-wrapper-two:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00ff81), to(#00a3bd)),
+  url(../../images/work-armani.jpg);
   background: linear-gradient(#00ff81, #00a3bd),
   url(../../images/work-armani.jpg);
   background-size: cover;
@@ -175,6 +183,8 @@ a {
 }
 
 .img-wrapper-three:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), color-stop(#ff0000), to(#9343ff)),
+  url(../../images/work-oakley.jpg);
   background: linear-gradient(#ff0000, #ff0000, #9343ff),
   url(../../images/work-oakley.jpg);
   background-size: cover;
@@ -190,6 +200,8 @@ a {
 }
 
 .img-wrapper-four:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00ffd0), to(#1434d2)),
+  url(../../images/work-tuesdays-magazine.jpg);
   background: linear-gradient(#00ffd0, #1434d2),
   url(../../images/work-tuesdays-magazine.jpg);
   background-size: cover;
@@ -222,29 +234,18 @@ a {
   }
 }
 
-
-/*
-
-.img-wrapper {
-  position: relative;
-}
-
-.overlay-one {
-  width: 100%;
-  height: 100%;
-  background: rgba(236, 142, 0, 0.7);
-  position: absolute;
-  top: 0;
-  left: 5%;
-  z-index: 2;
-}
-
 /* footer */
 footer {
   margin: 10% 0;
   padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 0.8rem;
   font-weight: 900;
@@ -267,6 +268,7 @@ footer a {
 
 .projects img {
   max-width: 100%; 
+  -ms-flex-item-align: start; 
   align-self: flex-start;
 }
 
@@ -276,6 +278,8 @@ footer a {
 
 
 .projects-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 5%;
 }
@@ -429,11 +433,13 @@ nav {
 
 
 .navigation-about {
+  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
 .navigation-work {
   right: 10%;
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -447,6 +453,7 @@ nav {
 @media (max-width: 768px) {
   .navigation p, .navigation-work {
     position: unset;
+    -webkit-transform: unset;
     transform: unset;
     }
   
@@ -458,7 +465,11 @@ nav {
     background-color: white;
     margin: 0 auto;
     padding: 20px 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
@@ -509,8 +520,13 @@ nav {
 /* other projects panel at the bottom */
   
   .other-projects-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-bottom: 0;
   } 
@@ -519,15 +535,23 @@ nav {
     width: 100%;
     height: 200px;
     background: #F5F5F5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 1rem;
+    -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }
 
 .other-projects:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .other-projects h4 {
@@ -545,6 +569,8 @@ nav {
 }
 
 .op-atm:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 165, 0, 1)), to(rgba(255, 0, 0, 1))),
+  url(../../images/work-atm-app.jpg);
   background: linear-gradient(rgba(255, 165, 0, 1), rgba(255, 0, 0, 1)),
   url(../../images/work-atm-app.jpg);
   background-size: cover;
@@ -554,6 +580,7 @@ nav {
 
 
 .op-armani:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00ff81), to(#00a3bd)), url(../../images/work-armani.jpg);
   background: linear-gradient(#00ff81, #00a3bd), url(../../images/work-armani.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -562,6 +589,8 @@ nav {
 
 
 .op-oakley:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), color-stop(#ff0000), to(#9343ff)),
+  url(../../images/work-oakley.jpg);
   background: linear-gradient(#ff0000, #ff0000, #9343ff),
   url(../../images/work-oakley.jpg);
   background-size: cover;
@@ -571,6 +600,8 @@ nav {
 
 
 .op-tuesdays:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00ffd0), to(#1434d2)),
+  url(../../images/work-tuesdays-magazine.jpg);
   background: linear-gradient(#00ffd0, #1434d2),
   url(../../images/work-tuesdays-magazine.jpg);
   background-size: cover;
