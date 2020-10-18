@@ -326,7 +326,7 @@ table, th, tr, td {
   text-align: left;
   padding: 1.5%;
   margin-top: 2%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 th {
   font-size: 1.2rem;
@@ -346,7 +346,7 @@ th {
 ul {
   list-style: square;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .tuesdays-video {
